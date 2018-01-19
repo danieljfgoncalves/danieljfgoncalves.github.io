@@ -1,0 +1,60 @@
+<footer class="footer " data-background-color="black">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ site.baseurl }}/" style="text-transform: none;">{{site.title}}</a>
+                </li>
+                {% if site.email %}
+                <li>
+                    <a href="mailto:{{ site.email }}" title="Email me" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                {% endif %}
+                 {% if site.linkedin %}
+                <li>
+                    <a href="{{ site.linkedin }}" title="follow on LinkedIn" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.github %}
+                <li>
+                    <a href="https://github.com/{{ site.github }}" title="follow on GitHub" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                {% endif %} {% if site.bitbucket %}
+                <li>
+                    <a href="https://bitbucket.org/{{ site.bitbucket }}" title="follow on Bitbucket" target="_blank">
+                        <i class="fa fa-bitbucket"></i>
+                    </a>
+                </li>
+                {% endif %} {% if site.twitter %}
+                <li>
+                    <a href="https://twitter.com/{{ site.twitter }}" title="follow on Twitter" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                {% endif %} 
+                <li style="padding-right:10px;padding-left:10px;">|</li>
+                {% for page in site.pages %} {% if page.title%}
+                <li>
+                    <a href="{{ page.url | relative_url }}">
+                        {{ page.title }}
+                    </a>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>, Coded by
+            <a href="{{site.linkedin}}" target="_blank">Daniel Gonçalves</a>. Designed with
+            <a href="https://www.creative-tim.com/product/now-ui-kit-pro" target="_blank">NowUI Kit</a>.
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,16 @@
+/* CUSTOM STYLES */
+
+/* FIXME: Review styles */
+.content {
+    background-color: orange;
+    height: 2000px;
+}
+
+.navbar .signature-logo {
+    max-width: 70px;
+}
+
+.navbar.bg-white:not(.navbar-transparent) .signature-logo {
+    -webkit-filter: invert(.5);
+    filter: invert(.5);
+}
