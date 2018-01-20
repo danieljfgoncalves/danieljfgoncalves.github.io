@@ -20,16 +20,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "danieljfgoncalves.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Settings
+avatar: assets/img/avatar-bw.png
 name: Daniel Gonçalves
 email: me@danieljgoncalves.com
 twitter: danieljfg
-github:  danieljfgoncalves
+github: danieljfgoncalves
 bitbucket: danieljgoncalves
 linkedin: https://www.linkedin.com/in/danieljfgoncalves/
 
+# Home
+
 # Special pages
-search: true
-tags: true
+search: false
+tags-search: false
 
 # Build settings
 markdown: kramdown

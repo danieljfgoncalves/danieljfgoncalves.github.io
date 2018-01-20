@@ -1,16 +1,43 @@
-/* CUSTOM STYLES */
+    /* CUSTOM STYLES */
 
-/* FIXME: Review styles */
-.content {
-    background-color: orange;
-    height: 2000px;
-}
+    .navbar .signature-logo {
+        max-width: 70px;
+    }
 
-.navbar .signature-logo {
-    max-width: 70px;
-}
+    .navbar.bg-white:not(.navbar-transparent) .signature-logo {
+        -webkit-filter: invert(.5);
+        filter: invert(.5);
+    }
 
-.navbar.bg-white:not(.navbar-transparent) .signature-logo {
-    -webkit-filter: invert(.5);
-    filter: invert(.5);
-}
+    .page-header:before {
+        background-color: rgba(3, 12, 34, 0.3);
+    }
+
+    @media (max-width: 576px) {
+        
+        .avatar {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    #latest-blogs {
+        background-color: white;
+    }
+
+    .btn-inky-blue {
+        background-color: #20293F;
+    }
+
+    .reading-time {
+        line-height: 1.2em;
+        font-size: 1em;
+    }
+
+    .category {
+        color: #20293F;
+    }
+
+    .category a {
+        margin-left: 20px;
+    }

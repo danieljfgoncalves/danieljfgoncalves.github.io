@@ -10829,11 +10829,11 @@ Created using IcoMoon - icomoon.io
         z-index: -1;
     }
     .navbar-collapse[data-color="blue"]:after {
-        background: #2CA8FF;
-        background: -webkit-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: -o-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: -moz-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: linear-gradient(#2CA8FF 0%, #000 80%);
+        background: #030C22;
+        background: -webkit-linear-gradient(#030C22 90%, #030C22 100%);
+        background: -o-linear-gradient(#030C22 90%, #030C22 100%);
+        background: -moz-linear-gradient(#030C22 90%, #030C22 100%);
+        background: linear-gradient(#030C22 90%, #030C22 100%);
     }
     .navbar-collapse[data-color="green"]:after {
         background: #18ce0f;
@@ -11402,11 +11402,11 @@ Created using IcoMoon - icomoon.io
         z-index: -1;
     }
     .burger-menu .navbar-collapse[data-color="blue"]:after {
-        background: #2CA8FF;
-        background: -webkit-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: -o-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: -moz-linear-gradient(#2CA8FF 0%, #000 80%);
-        background: linear-gradient(#2CA8FF 0%, #000 80%);
+        background: #030C22;
+        background: -webkit-linear-gradient(#030C22 90%, #030C22 100%);
+        background: -o-linear-gradient(#030C22 90%, #030C22 100%);
+        background: -moz-linear-gradient(#030C22 90%, #030C22 100%);
+        background: linear-gradient(#030C22 90%, #030C22 100%);
     }
     .burger-menu .navbar-collapse[data-color="green"]:after {
         background: #18ce0f;

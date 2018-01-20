@@ -13,7 +13,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse" data-nav-image="{{site.baseurl}}/assets/img/markus-spiske-357131.jpg" data-color="#404749">
+        <div class="collapse navbar-collapse" data-nav-image="{{site.baseurl}}/assets/img/markus-spiske-357131.jpg" data-color="blue">
             <ul class="navbar-nav ml-auto">
                  {% for page in site.pages %} {% if page.title%}
                 <li class="nav-item">
@@ -31,7 +31,7 @@
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
                 </li>
-                {% endif %} {% if site.tags %}
+                {% endif %} {% if site.tags-search %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ page.url | relative_url }}">
                         <i class="fa fa-tags" aria-hidden="true"></i>

@@ -1,0 +1,10 @@
+{% assign tags = include.tags | split:'|' | sort | uniq %} {% if include.tags.size > 0 %}
+<h6 class="category text-default">
+    <i class="fa fa-tag fa-fw"></i>
+    {% for tag in tags %}
+    <a href="{{site.baseurl}}/tags#{{tag}}">{{ tag }}</a>
+    {% endfor %}
+</h6>
+{% else %}
+<br/>
+{% endif %}
