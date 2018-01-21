@@ -39,7 +39,7 @@
                 </li>
                 {% endif %} 
                 <li style="padding-right:10px;padding-left:10px;">|</li>
-                {% for page in site.pages %} {% if page.title%}
+                {% for page in site.pages %} {% if page.title and page.hide != true%}
                 <li>
                     <a href="{{ page.url | relative_url }}">
                         {{ page.title }}

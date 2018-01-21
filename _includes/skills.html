@@ -1,0 +1,46 @@
+{% assign skills = include.skills %}
+{% if skills.size > 0 %}
+{% assign half = skills.size | divided_by: 2 %}
+{% assign mod = skills.size | modulo: 2 %}
+{% assign index = half | plus: mod %}
+
+<div id="skills" class="row">
+    <div class="col-md-6">
+        <ul class="no-bullets">
+            {% for skill in skills limit: index %}
+            <li>
+                <span class="skill-title">{{skill.description}}</span>
+                <span class="skill-score">
+                    {% assign stars = skill.score %}
+                    {% for i in (1..stars) %}
+                    <span class="fa fa-star filled"></span>
+                    {% endfor %}
+                    {% for i in (stars..4) %}
+                    <span class="fa fa-star"></span>
+                    {% endfor %}
+                </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="no-bullets">
+            {% for skill in skills offset: index %}
+            <li>
+                <span class="skill-title">{{skill.description}}</span>
+                <span class="skill-score">
+                    {% assign stars = skill.score %} 
+                    {% for i in (1..stars) %}
+                    <span class="fa fa-star filled"></span>
+                    {% endfor %} {% for i in (stars..4) %}
+                    <span class="fa fa-star"></span>
+                    {% endfor %}
+                </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<!-- <hr> -->
+<div class="separator-line separator-primary" style="margin: 70px auto;"></div>
+{% endif %}
