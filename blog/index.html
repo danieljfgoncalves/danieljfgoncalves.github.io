@@ -1,0 +1,109 @@
+---
+layout: default
+---
+<div class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient(rgba(32,41,63, 0.65), rgba(3,12,34, 0.80)), url('{{ site.baseurl }}/assets/img/thought-catalog-214785-sm.jpg') ;">
+    </div>
+    <div class="content-center">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">My Blog</h2>
+                <h4>dev blog with tuts, dev tricks, snippets & other cool stuff</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="start-blog" class="section">
+    <div class="col-md-8 ml-auto mr-auto">
+        <div class="blogs-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 ml-auto mr-auto">
+                        <br /> {% for post in paginator.posts %}
+                        <div class="card card-plain card-blog">
+                            <div class="row">
+                                {% if post.image %}
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <a href="{{ site.baseurl }}{{ post.url }}">
+                                            <img class="img img-raised rounded" src="{{ site.baseurl }}/{{ post.image }}" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    {% else %}
+                                    <div class="col-md-12">
+                                        {% endif%}
+                                        <h3 class="card-title">
+                                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                        </h3>
+                                        <p class="card-description">
+                                            {{ post.content | strip_html | truncate: "150" }}
+                                            <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary btn-simple btn-round btn-sm"> Read More </a>
+                                        </p>
+                                        <div class="author">
+                                            <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+                                            <span class="pull-right">
+                                                <i class="now-ui-icons tech_watch-time"></i>
+                                                {% assign words = post.content | number_of_words %} {% if words
+                                                < 360 %} 1 min {%
+                                                    else %} {{ words | divided_by:180 }} mins {% endif %} </span>
+                                        </div>
+                                         {% capture tag-list %}{{ post.tags | join: "|"}}{% endcapture %} {% include tags-list.html tags=tag-list %}
+                                    </div>
+                                </div>
+                            </div>
+                            <hr> {% endfor %}
+                        </div>
+                    </div>
+                    {% if paginator.total_pages > 1 %}
+                    <div class="col-md-10 ml-auto mr-auto pagination-container justify-content-center">
+                        <ul class="pagination pagination-primary">
+                            {% assign prev = paginator.page | minus: 1 %}
+                            {% assign nxt = paginator.page | plus: 1 %}
+                            {% assign tot = paginator.total_pages %}
+                            {% if paginator.previous_page %}
+                            <li class="page-item arrow-margin-left">
+                                <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#start-blog" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="{{ site.baseurl }}/blog/#start-blog">1</a>
+                            </li>
+                            {% for i in (2..prev) %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ site.baseurl }}/blog/page{{i}}/#start-blog">{{i}}</a>
+                            </li>
+                            {% endfor %}
+                            <li class="page-item active">
+                                <a class="page-link" href="#start-blog">{{paginator.page}}</a>
+                            </li>
+                            {% else %}
+                            <li class="page-item active">
+                                <a class="page-link" href="#start-blog">{{paginator.page}}</a>
+                            </li>
+                            {% endif %}  
+                            {% for i in (nxt..tot) %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ site.baseurl  }}/blog/page{{i}}/#start-blog">{{i}}</a>
+                            </li>
+                            {% endfor %} 
+                            {% if paginator.next_page %}
+                            <li class="page-item arrow-margin-right">
+                                <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#start-blog" aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+    </div>
+</div>

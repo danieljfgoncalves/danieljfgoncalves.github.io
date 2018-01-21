@@ -1,8 +1,8 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="250">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#" rel="tooltip" title="{{site.name}}"
+            <a class="navbar-brand" href="{{site.baseurl}}/" rel="tooltip" title="{{site.name}}"
                 data-placement="bottom">
                 <img class="signature-logo" src="{{site.baseurl}}/assets/img/dg-signature-logo-white.png"/>
             </a>
@@ -25,6 +25,12 @@
                     </a>
                 </li>
                 {% endif %} {% endfor %} 
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/blog">
+                        <i class="now-ui-icons design_bullet-list-67"></i>
+                        Blog
+                    </a>
+                </li>
                 {% if site.search %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ page.url | relative_url }}">

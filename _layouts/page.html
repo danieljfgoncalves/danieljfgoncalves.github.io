@@ -1,0 +1,21 @@
+--- 
+layout: default 
+---
+<img src="{{ site.baseurl }}/{{page.header}}" style="display:none;">
+<div class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient(rgba(32,41,63, 0.65), rgba(3,12,34, 0.80)), url('{{ site.baseurl }}/{{page.header}}') ;">
+    </div>
+    <div class="content-center">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">{{page.title}}</h2>
+                {% if page.subtitle %}
+                <h4>{{page.subtitle}}</h4>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="col-md-8 ml-auto mr-auto">{{ content }}</div>
+</div>

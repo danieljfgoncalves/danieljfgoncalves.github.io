@@ -42,14 +42,15 @@ layout: default
         </div>
     </div>
 </div>
-<div class="cd-section" id="latest-blogs">
+<div class="section" id="latest-blogs">
     <div class="blogs-4" id="blogs-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <h2 class="title text-center">Latest Posts</h2>
                     <br />
-                     {% for post in site.posts limit:3 %}
+                    {% for post in site.posts limit:3 %}
+                    <div class="separator-line separator-neutral"></div>
                     <div class="card card-plain card-blog">
                         {% if post.image %}
                         <div class="card-image">
@@ -57,8 +58,6 @@ layout: default
                                 <img class="img img-raised rounded" src="{{ site.baseurl }}/{{ post.image }}" />
                             </a>
                         </div>
-                        {% else %}
-                        <hr>
                         {% endif%}
                         <!-- FIXME: implement tags search -->
                         {% capture tag-list %}{{ post.tags | join: "|"}}{% endcapture %} 

@@ -29,6 +29,20 @@
         background-color: #20293F;
     }
 
+    .btn-primary.btn-simple {
+        color: #20293F;
+        border-color: #20293F;
+    }
+
+    .btn-primary.btn-simple:hover,
+    .btn-primary.btn-simple:focus,
+    .btn-primary.btn-simple:active {
+        background-color: #20293F;
+        color: #ffffff;
+        border-color: #20293F;
+        box-shadow: none;
+    }
+
     .reading-time {
         line-height: 1.2em;
         font-size: 1em;
@@ -36,8 +50,20 @@
 
     .category {
         color: #20293F;
+        margin-top: 15px;
     }
 
     .category a {
         margin-left: 20px;
+    }
+
+    .separator-line.separator-primary {
+        background-color: #20293F;
+    }
+
+    .pagination.pagination-primary .page-item.active>.page-link,
+    .pagination.pagination-primary .page-item.active>.page-link:focus,
+    .pagination.pagination-primary .page-item.active>.page-link:hover {
+        background-color: #20293F;
+        border-color: #20293F;
     }
