@@ -1,0 +1,27 @@
+--- 
+layout: default 
+---
+<img src="{{ site.baseurl }}/{{post.image}}" style="display:none;">
+<div id="post-header" class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient(rgba(32,41,63, 0.65), rgba(3,12,34, 0.80)), url('{{ site.baseurl }}/{{ page.image }}') ;">
+    </div>
+    <div class="content-center">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">{{page.title}}</h2>
+                <h4>
+                    {{ page.date | date: "%B %-d, %Y" }}
+                </h4>
+                 {% assign words = page.content | number_of_words %}
+                <h4>
+                    <i class="now-ui-icons tech_watch-time"></i>
+                    {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {% endif %}
+                </h4>
+                {% capture tag-list %}{{ page.tags | join: "|"}}{% endcapture %} {% include tags-list.html tags=tag-list %}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page" class="section">
+    <div class="col-md-8 ml-auto mr-auto">{{ content }}</div>
+</div>

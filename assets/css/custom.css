@@ -57,6 +57,17 @@
         margin-left: 20px;
     }
 
+    #post-header .title, #post-header .category,
+    #post-header h4 {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #post-header .category a {
+        color: #fff;
+        text-align: left;
+    }
+
     .separator-line.separator-primary {
         background-color: #20293F;
     }
