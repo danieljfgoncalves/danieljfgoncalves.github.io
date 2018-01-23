@@ -1,13 +1,51 @@
-- year: 2000
-  img: assets/img/everaldo-coelho-486012-sm.jpg
-  description: Ipsum bacon
-
-- year: 2002
-  description: Lorem bacon
-
-- year: 2004
-  img: assets/img/everaldo-coelho-486012-sm.jpg
-  description: Ipsum bacon
+- year: 2006
+  img: assets/img/eduardo-santos-368353.jpg
+  title: My first Job!
+  description: Worked as a Lifeguard in Póvoa de Varzim.
 
 - year: 2006
-  description: Ipsum Lorem bacon
+  img: assets/img/ismai-logo.jpg
+  title: First time in College.
+  description: Enrolled in Physical Education, at ISMAI.
+
+- year: 2009
+  title: First Part-time.
+  description: Part-time at Blockbuster!
+
+- year: 2011
+  img: assets/img/ismai-logo.jpg
+  title: Concluded my Masters!
+  description: Concluded my masters in Physical Education for basic and secondary studies.
+
+- year: 2011
+  title: Founded ActivityBox.
+  description: Started ActivityBox with a friend, a small service company that worked directly with Kindergardens, to enroll physical education classes for kids, in their curriculum.
+
+- year: 2012
+  img: assets/img/xeque-mate.jpg
+  title: Chess Teacher!
+  description: Worked for Xeque-Mate as a teacher, teaching kids chess in the Porto Region.
+
+- year: 2013
+  img: assets/img/laura-lefurgey-smith-184954.jpg
+  title: Moved to St. John's, NL!
+  description: Moved to Canada, started working for my father in the Construction Business, as an office 'handyman' 😎.
+
+- year: 2013
+  img: assets/img/patrick-tomasso-256393.jpg
+  title: Moved to Toronto!
+  description: Moved to Toronto, Canada, and started a new branch of my father's company.
+
+- year: 2015
+  img: assets/img/bitmaker.jpg
+  title: iOS Dev Course
+  description: Learnt iOS Development at Bitmaker in Toronto.
+
+- year: 2015
+  img: assets/img/bruno-luz-323255.jpg
+  title: Back to Portugal!
+  description: Came back to Porto and enrolled in Informatics Engineering at ISEP, Porto.
+
+- year: 2018
+  title: Ready to be a Developer!
+  description: Available for an academic interniship in Software Development.

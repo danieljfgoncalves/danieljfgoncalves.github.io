@@ -1,27 +1,29 @@
 {% assign content = include.content %}
-<div class="section-story-overview">
-    <div class="row">
-        <div class="col-md-6">
-            <!-- First image on the left side -->
-            <div class="image-container image-left" style="background-image: url('{{site.baseurl}}/{{content.img-left}}')">
-                {% if content.quote %}
-                <p class="blockquote blockquote-primary">{{content.quote}}
-                    <br>
-                    <br>
-                    <small>-{{content.quote-author}}</small>
-                </p>
-                {% endif %}
+<div class="container landing-page">
+    <div class="section-story-overview">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- First image on the left side -->
+                <div class="image-container image-left" style="background-image: url('{{site.baseurl}}/{{content.img-left}}')">
+                    {% if content.quote %}
+                    <p class="blockquote blockquote-primary">{{content.quote}}
+                        <br>
+                        <br>
+                        <small>-{{content.quote-author}}</small>
+                    </p>
+                    {% endif %}
+                </div>
+                <!-- Second image on the left side of the article -->
+                <div class="image-container image-left-bottom" style="background-image: url('{{site.baseurl}}/{{content.img-second-left}}')"></div>
             </div>
-            <!-- Second image on the left side of the article -->
-            <div class="image-container image-left-bottom" style="background-image: url('{{site.baseurl}}/{{content.img-second-left}}')"></div>
-        </div>
-        <div class="col-md-5">
-            <!-- First image on the right side, above the article -->
-            <div class="image-container image-right" style="background-image: url('{{site.baseurl}}/{{content.img-right}}')"></div>
-            <h3>{{content.subtitle}}</h3>
-            {% for p in content.paragraphs %}
-            <p>{{p}}</p>
-            {% endfor %}
+            <div class="col-md-5">
+                <!-- First image on the right side, above the article -->
+                <div class="image-container image-right" style="background-image: url('{{site.baseurl}}/{{content.img-right}}')"></div>
+                <h3>{{content.subtitle}}</h3>
+                {% for p in content.paragraphs %}
+                <p>{{p}}</p>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

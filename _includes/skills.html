@@ -10,8 +10,9 @@
             {% for skill in skills limit: index %}
             <li>
                 <span class="skill-title">{{skill.description}}</span>
+                {% assign stars = skill.score %}
+                {% if stars != "na" %}
                 <span class="skill-score">
-                    {% assign stars = skill.score %}
                     {% for i in (1..stars) %}
                     <span class="fa fa-star filled"></span>
                     {% endfor %}
@@ -19,6 +20,7 @@
                     <span class="fa fa-star"></span>
                     {% endfor %}
                 </span>
+                {% endif %}
             </li>
             {% endfor %}
         </ul>
@@ -28,19 +30,19 @@
             {% for skill in skills offset: index %}
             <li>
                 <span class="skill-title">{{skill.description}}</span>
+                {% assign stars = skill.score %} 
+                {% if stars != "na" %}
                 <span class="skill-score">
-                    {% assign stars = skill.score %} 
                     {% for i in (1..stars) %}
                     <span class="fa fa-star filled"></span>
                     {% endfor %} {% for i in (stars..4) %}
                     <span class="fa fa-star"></span>
                     {% endfor %}
                 </span>
+                {% endif %}
             </li>
             {% endfor %}
         </ul>
     </div>
 </div>
-<!-- <hr> -->
-<div class="separator-line separator-primary" style="margin: 70px auto;"></div>
 {% endif %}

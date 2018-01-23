@@ -1,0 +1,10 @@
+- description: Django [Python]
+  score: 1
+- description: Elixir
+  score: 1
+- description: Scala
+  score: 1
+- description: Docker
+  score: 3
+- description: Nativescript
+  score: 1

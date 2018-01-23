@@ -10,7 +10,14 @@
                     <img class="img img-raised rounded" src="{{ site.baseurl }}/{{item.img}}" />
                 </figure>
                 {% endif %}
-                {{item.description}}
+                {% if item.title %}
+                <h3>{{item.title}}</h3>
+                {% else %}
+                <br>
+                {% endif %}
+                {% if item.description %}
+                <p>{{item.description}}</p>
+                {% endif %}
             </div>
         </li>
         {% endfor %}

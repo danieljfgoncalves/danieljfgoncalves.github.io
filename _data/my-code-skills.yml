@@ -1,20 +1,34 @@
+- description: GIT [Version Control]
+  score: 5
 - description: JAVA
   score: 5
 - description: JPA Framework
   score: 5
+- description: maven
+  score: 5
+- description: gradle
+  score: 5
+- description: Jenkins
+  score: 3
 - description: PL/SQL
   score: 4
 - description: MongoDB
   score: 5
 - description: MySQL
   score: 5
+- description: PHP
+  score: 3
 - description: Javascript 
   score: 5
 - description: objective-c
   score: 5
 - description: Swift
   score: 4
+- description: cocoapods
+  score: 4
 - description: node.js
+  score: 5
+- description: npm
   score: 5
 - description: express.js [Web Framework]
   score: 5
@@ -28,6 +42,12 @@
   score: 3
 - description: C
   score: 4
+- description: Bash
+  score: 5
+- description: Powershell
+  score: 4
+- description: Curl
+  score: 5
 - description: .NET 
   score: 4
 - description: C++
@@ -36,3 +56,13 @@
   score: 4
 - description: webGL
   score: 4
+- description: grunt.js
+  score: 3
+- description: gulp.js
+  score: 4
+- description: bower
+  score: 5
+- description: Homebrew
+  score: 5
+- description: PROLOG
+  score: 5
